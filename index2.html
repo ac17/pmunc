@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- PACE LOADING BAR DEPENDENCIES -->
+		<script src="js/pace.min.js"></script>
+		<link href="css/pace-minimal.css" rel="stylesheet">
+
+		<!-- BOOTSTRAP -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Neuton:300,400,700,400italic' rel='stylesheet' type='text/css'>		
+		<!-- CUSTOM CSS -->
+		<link href="css/index.css" rel="stylesheet">
+
+		<title>PMUNC</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Princeton Model United Nations Conference">
+		<meta name="keywords" content="PMUNC, MUN">
+		<meta name="author" content="Clement Lee and Angelica Chen">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- GOOGLE ANALYTICS -->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51958755-1', 'princeton.edu');
+  ga('send', 'pageview');
+
+</script>	
+</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Princeton Model United Nations Conference</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="register.php">Register</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="logistics.html">Logistics</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="preparation.html">Preparation</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+						</li>
+						<li><a href="committees.php">Committees</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://www.facebook.com/PrincetonModelUnitedNationsConference2014"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://irc.princeton.edu/"><i class="fa fa-globe"></i></a></li>
+						<li><a href="mailto:pmunc@princeton.edu?Subject=PMUNC"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Carousel
+		================================================== -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/robertson-hall.jpg" id="robertson" width="100%" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class = "black-box">
+								<h1 class="banner">Welcome to<br><br><div class="large-text">PMUNC</div></h1>
+								<h1 id="carousel-1">Princeton Model United Nations Conference 2014<br>November 20-23, 2014</h1>
+							<br>
+							<style>
+							#register-buttons {
+								border-collapse: separate;
+								border-spacing: 10px;
+							}
+							.btn-reg {
+								width: 250px;
+							}
+							</style>
+							<table width=100% id="register-buttons">
+								<tr>
+									<td width=50%>
+										<p class="text-right"><a class="btn-reg btn btn-lg btn-primary" href="register.php" role="button">Register</a></p>
+									</td>
+									<td width=50%>
+										<p class="text-left"><a class="btn-reg btn btn-lg btn-primary" href="signin.php" role="button">Already registered? Login here</a></p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/hyatt-regency.png" id="hr" width="100%" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="black-box">
+								<h1 class="banner">New Look, New Location, Same Great Content.</h1>
+								<p id="carousel-2">For PMUNC 2014, we're debuting a new website and hotel! We hope you enjoy the changes.</p>
+							<br>
+							<p><a class="btn btn-lg btn-primary" href="logistics.html" role="button">More Information</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/secretariat.jpg" width="100%" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<div class="black-box">
+								<h1 class="banner">Meet the Secretariat!</h1>
+							</div><br>
+							<p><a class="btn btn-lg btn-primary" href="#secContainer" role="button">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+		<div id="dialogue" data-0="background-position:0px 0px;" data-500="background-position:0px -150px;">
+		<div class="container marketing">
+			<div class="body-container catchphrase center-container">
+				<center>
+					<img src="img/logo.png" width="15%"><br>
+					<h1 id="start-dialogue">Start the dialogue.</h1>
+					<h1 class="community">Join a community of global citizens.</h1>
+					<h1><a id="letterLink" data-toggle="modal" data-target="#letterSecGen">Read the letter from the Secretary General.</a></h1>
+					<div class="modal fade" id="letterSecGen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg">
+					    <div id="letter" class="modal-content">
+					    	<h1>Letter from the Secretary General</h1>
+					    	<div class="horbar">
+					    	</div><br><br>					    	
+					    		<img src="img/Seamus_Daniels.jpg" id="sec-gen" width="25%">
+					    		<p class="text-left"><strong>Dear Faculty Advisers and Delegates,</strong></p>
+					    		<p class="text-left">It is with great pleasure that I invite you to the 2014 Princeton Model United Nations Conference (PMUNC), which will be held November 20th- 23th, 2014.</p>
+					    		<p class = "text-left">PMUNC is hosted by Princeton University’s International Relations Council, a subsidiary of the American Whig-Cliosophic Society - the oldest collegiate political, literary, and debating society in the United States and still the largest student-run extracurricular body at Princeton. Since its creation, PMUNC’s main goal has been to engage high school students in issues currently debated on the international stage, to teach diplomacy by asking hard questions, to foster serious discussion, and ultimately to further the skills required to reach a compromise and build a consensus. Often, this is not easy since our committees and their topics are designed to demonstrate the difficulty of international cooperation, particularly within the sometimes strict framework of the United Nations.</p> 
+					   			<p class = "text-left">This year, I am excited to announce that PMUNC will take place in a new venue at the Hyatt Regency Princeton! The Hyatt Regency is conveniently located only minutes away from the University’s campus and downtown Princeton with easy access to both US Route 1 and the Princeton Junction Train Station. We are looking forward to hosting PMUNC in this beautifully renovated hotel and conference center which was completed this past year.
+					   			</p>
+					   			<p class = "text-left">The rooms at the Hyatt Regency will hold a variety of committees intended to challenge the delegates and foster discussion on international issues, past and present. In addition to the committees commonly found at a Model UN conference, we have introduced several regional organizations and cabinet–style committees, as well as a number of highly specialized and creative crisis simulations. The committees available at PMUNC 2014 will surely offer even the most demanding delegates an unbeatable array of opportunities to discuss and debate a range of issues and regions.
+					   			</p>
+				    			<p class = "text-left">While we are continually making changes and improvements to our conference, the one thing that will never change is the high degree of personal attention each delegate receives at PMUNC. All of our committees are kept reasonably small so that our delegates and staff get the opportunity to know one another and every delegate has sufficient time to discuss the topics at hand frankly and thoroughly.</p>   
+				    			<p class = "text-left">We have also arranged for both you and your delegates to visit the Princeton campus before committee session begins on Friday. During this visit, delegates will be able to talk to current Princeton students, tour the campus as well as the historic town of Princeton, attend admissions information sessions, and generally get a taste of the Princeton experience.
+				    			</p>
+				    			<p class = "text-left">PMUNC is staffed entirely by Princeton undergraduates who represent a range of interests and disciplines, from anthropology and politics to economics, math, and even mechanical engineering. Our staff members originate from five continents and speak enough languages to hold their own against the most capable interpreters at the United Nations itself.
+					    		</p>
+					    		<p class = "text-left">On behalf of the Secretariat of PMUNC 2014 and our entire staff, I hope you can join us in November. If you have any questions, please do not hesitate to contact our Charg&eacute; d’Affaires via email at pmunc@princeton.edu. In addition, keep checking our website as we continue to post more detailed information about the Conference.
+					   			</p>
+					   	 		<p class = "text-left">I look forward to meeting all of you at PMUNC 2014!
+					   			</p>
+					   			<p class="text-right">Sincerely,<br>
+				    				Seamus Daniels ‘16<br>
+				    				Secretary General<br>
+				    				PMUNC 2014
+				    			</p>							
+					    </div>
+					  </div>
+					</div>
+				</center>
+			</div>
+		</div>
+		</div>
+	<div id="secContainer">
+		<div class="container text-center catchphrase">
+			<div class="body-container">
+			<h1 id="secretariat">The Secretariat of PMUNC 2014</h1>
+			<div class="container horbar">
+			</div><br>
+			<div class="row">
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Seamus_Daniels.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Seamus Daniels</h1>
+							<h2>Secretary-General</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Preston_Lim.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Preston Lim</h1>
+							<h2>Charg&eacute; D'Affaires</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Martha_Jachimski.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Martha Jachimski</h1>
+							<h2>Chief of Staff</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Alanna_Williams.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Alanna Williams</h1>
+							<h2>Under Secretary-General of Hotel Relations</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Ben_Dobkin.jpg" class="img-responsive center-block prof-pic">	
+						<div class="about-text">
+							<h1>Ben Dobkin</h1>
+							<h2>Under Secretary-General of Security</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+					<img src="img/Whig_Hall.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Kevin Tresselt</h1>
+							<h2>Under Secretary-General of Transportation</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Jason_Choe.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Jason Choe</h1>
+							<h2>Under Secretary-General of Publications</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Austin_Jackson.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Austin Jackson</h1>
+							<h2>Under Secretary-General of Entertainment</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Sunny_Zhang.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Sunny Zhang</h1>
+							<h2>Under Secretary-General of Entertainment</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Tucker_Jones.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Tucker Jones</h1>
+							<h2>Director-General of Committees</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Cydney_Kim.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Cydney Kim</h1>
+							<h2>Director-General of Content Operations</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Paul_Yang.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Paul Yang</h1>
+							<h2>Director-General of General Assembly Committees</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Ararat_Gocmen.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Ararat Gocmen</h1>
+							<h2>Director-General of Crisis Committees</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Neamah_Hussein.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Neamah Hussein</h1>
+							<h2>Director-General of Specialized and Regional Committees</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Jennifer_Zhou.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Jennifer Zhou</h1>
+							<h2>IRC President</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Ella_Cheng.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Ella Cheng</h1>
+							<h2>IRC Vice-President</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Elise_Backman.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Elise Backman</h1>
+							<h2>Oversight</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Lena_Sun.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Lena Sun</h1>
+							<h2>Director of Finance</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Angelica_Chen.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Angelica Chen</h1>
+							<h2>Website Developer</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 about-div">
+					<div class="thumbnail">
+						<img src="img/Clement_Lee.jpg" class="img-responsive center-block prof-pic">
+						<div class="about-text">
+							<h1>Clement Lee</h1>
+							<h2>Website Developer</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="container container-footer">
+			<div class="container">
+			<footer>
+			<p class="pull-right">Designed by Angelica Chen &amp; Clement Lee &middot; <a href="#">Back to top</a></p>
+			<p class="pull-left">&copy; 2014 Princeton Model United Nations Conference </p>
+			</footer>
+		</div>
+		</div>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<script src="js/skrollr.js"></script>
+		<script type="text/javascript">
+			skrollr.init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,265 @@
+body {
+	margin-top:50px;
+	min-width:500px;
+	text-rendering:optimizeLegibility;
+	font-family: 'Neuton', serif;
+	font-size: 18px;
+	font-weight: 300;
+	background: #f5f5f5;
+}
+
+a {
+    color:black;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a[name] {
+  padding-top: 50px;
+  margin-top: -50px;
+  display: inline-block; /* required for webkit browsers */
+}
+
+a#letterLink {
+	text-decoration: underline;
+}
+
+a#letterLink:hover {
+	text-decoration: none;
+}
+
+.jumbotron {
+	background: url(/img/banner.jpg) no-repeat center center;
+	background-size: cover;
+	color:#fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#announcements {
+	background-color:#F58025;
+	padding:25px;
+	text-align:center1;
+	font-size:150%;
+}
+
+.thumbnail {
+	padding:20px;
+}
+
+.prof-pic {
+	max-width:200px;
+}
+.about-div {
+	padding-top:20px;
+	padding-bottom:20px;
+	font-family: 'Neuton', serif;
+	font-size:200%;
+}
+
+.about-text {
+	width:100%;
+	padding:10px;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.banner {
+	font-family: 'Fjalla One', sans-serif;
+	text-shadow: 1px 1px 2px black;
+}
+
+.banner-inverted {
+	font-family: 'Fjalla One', sans-serif;
+	color: #ffffff;
+	text-shadow: 2px 2px 2px black;
+}
+
+.carousel {
+	margin-top:50px;
+	background-color: #FFEBCD;
+}
+
+.body-container {
+	margin-top:50px;
+}
+
+.catchphrase {
+	margin-top: 50px;
+	margin-bottom:50px;
+}
+
+.center-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.jumbotron {
+	position: relative;
+	margin-top: 50px;
+}
+
+.princeton {
+	background-image: url("../img/chapel-2.jpg");
+	background-size: cover;
+}
+
+.large-text {
+	font-size: 200%;
+	display: inline;
+	letter-spacing: 15px;
+}
+
+#carousel-1 {
+	font-family: 'Neuton', serif;
+	font-size: 30px;
+}
+
+p#carousel-2 {
+	font-size: 20px;
+}
+
+#myCarousel {
+	background-color: black;
+}
+
+.carousel-caption {
+	text-shadow: 1px 1px 2px white;
+}
+
+#robertson {
+	opacity: 0.7;
+}
+
+#hr {
+	opacity: 0.75;
+}
+
+#dialogue {
+	/* background-image: url("../img/gavel.jpg"); */
+	background-color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 105%;
+}
+
+#home-letter {
+	/* background-color: #363fac; */
+	background-image: url("../img/chapel.jpg");
+	background-size: 120% 120%;
+	background-repeat: no-repeat;
+	color: white;
+	width: 105%;
+}
+
+#letter {
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	font-weight: 400;
+}
+
+#letter p.text-left {
+	text-align: justify;
+}
+
+
+#sec-gen{
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+
+.horbar {
+	background-color: #F58025;
+	height: 2px;
+}
+
+.horbar-white {
+	background-color: white;
+	height: 2px;
+}
+
+#secContainer {
+	background-color: #f5f5f5;
+	margin-bottom: -50px;
+}
+
+.about-text h1 {
+	font-size: 20px;
+	line-height: 80%;
+}
+
+.about-text h2 {
+	font-size: 18px;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+#start-dialogue {
+	font-size: 45px;
+}
+
+.community {
+	font-size: 30px;
+}
+
+#letterLink {
+color: #f85025;
+	font-size: 30px;
+}
+
+.navbar {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 16px;
+}
+
+.container-footer {
+	background-image:-webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
+	background-image:linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	width: 100%;
+	padding: 15px;
+}
+
+.modal-content {
+	overflow: scroll;
+	padding-bottom: 50px;
+}
+
+.invalid {
+	color: red;
+}
+
+.valid {
+	color: green;
+}
+
+#captcha {
+	margin-bottom: 15px;
+}
+
+#register-buttons {
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.btn-reg {
+	width: 250px;
+}
+
+footer {
+	color: white;
+}
+
+footer a {
+color: #00ffff;
+}
